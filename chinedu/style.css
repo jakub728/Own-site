@@ -28,7 +28,7 @@ body {
     margin: 0;
   }
   
-  /* Main Content */
+  
   main {
     max-width: 800px;
     margin: 2rem auto;
@@ -77,7 +77,7 @@ body {
     text-decoration: underline;
   }
   
-  /* Footer */
+  
   footer {
     text-align: center;
     background: #4CAF50;
@@ -87,23 +87,9 @@ body {
     font-size: 0.9rem;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     header .profile-pic {
       width: 120px;
       height: 120px;
-    }
-  
-    header h1 {
-      font-size: 2rem;
-    }
-  
-    main {
-      margin: 1rem;
-      padding: 1rem;
-    }
-  
-    section h2 {
-      font-size: 1.5rem;
     }
   }
