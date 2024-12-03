@@ -125,3 +125,16 @@ body {
       height: 120px;
     }
   }
+  .back-button {
+    display: flex; /* Flex container */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: brown; /* Orange background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
