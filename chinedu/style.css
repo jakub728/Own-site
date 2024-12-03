@@ -12,7 +12,7 @@ body {
     /* background: #4CAF50; */
     color: white;
     padding: 2rem 1rem;
-    background-image: url('/images/wall.png');
+    background-image: url('images/wall.png');
   }
   
   header .profile-pic {
