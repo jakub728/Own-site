@@ -1,12 +1,17 @@
+* {
+    height: 100vh;
+    overflow: hidden;
+}
 
 
 
 
 
 
-
-body main {
-
+body {
+    background: url(https://cdn.pixabay.com/photo/2022/09/21/17/02/blue-background-7470781_1280.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
