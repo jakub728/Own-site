@@ -9,9 +9,10 @@ body {
   
   header {
     text-align: center;
-    background: #4CAF50;
+    /* background: #4CAF50; */
     color: white;
     padding: 2rem 1rem;
+    background-image: url('/images/wall.png');
   }
   
   header .profile-pic {
@@ -76,8 +77,8 @@ body {
   section h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
+    color: lightbrown;
+    border-bottom: 2px solid lightbrown;
     display: inline-block;
   }
   
@@ -100,7 +101,7 @@ body {
   
   a {
     text-decoration: none;
-    color: #4CAF50;
+    color: brown;
     font-weight: bold;
   }
   
@@ -111,7 +112,7 @@ body {
   
   footer {
     text-align: center;
-    background: #4CAF50;
+    background: brown;
     color: white;
     padding: 1rem;
     margin-top: 2rem;
