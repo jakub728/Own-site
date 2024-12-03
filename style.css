@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+
+  overflow: hidden;
+}
+header {
+  margin-top: 0 !important;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/wallpapersden.com_street-4k-black-and-white-photography_3840x2160.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.content {
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  right: 5px;
+  top: 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav li {
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 50px 16px;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+nav a:hover {
+  background-color: #fccb0648;
+  border-radius: 5px;
+  color: #b1ddf1;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 3rem;
+}
+
+h1 {
+  color: #fccb06;
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 1;
+  text-shadow: 2px 2px 0px #466c6b;
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+li a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+span {
+  color: #b1ddf1;
+}
+
+.contact-btn {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #b1ddf1;
+  color: black;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.contact-btn:hover {
+  background-color: #fccb06;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 80px;
+  color: #b1ddf1;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.socials li {
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.socials li:hover {
+  transform: scale(1.2) rotate(360deg);
+  color: #fccb06;
+}
+
+.container3 {
+  margin-bottom: 6rem;
+  min-height: 100vh;
+  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  gap: 20px;
+  height: 100vh;
+  padding-left: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  align-items: left;
+  transition: transform 0.3s;
+  background-color: #b1ddf191;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  color: black;
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+h4 {
+  color: #fccb06;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.contact {
+  width: 80%;
+  margin: 6rem auto 0;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+}
+
+input,
+label,
+textarea {
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.contact button {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #b1ddf1;
+  color: black;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.contact button:hover {
+  background-color: #fccb06;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #fccb06;
+}
+
+.container2 {
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.title {
+  color: #689788;
+  margin: 1rem 0rem;
+  font-size: 4rem;
+}
+
+.container2 p {
+  font-size: 1.4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+bottom: 16px;
+height: 6rem;
+}
+
+footer {
+  bottom: 100px;
+ 
+}
+@media (max-width: 1200px) {
+ 
+  nav {
+      position: fixed;
+      text-align: center;
+      padding: 10px 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 0;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  nav a {
+      padding: 10px 15px;
+      font-size: 1rem;
+  }
+
+  .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 90%;
+  }
+}
+
+.contact {
+  max-width: 100%;
+  padding-top: 50rem;
+  
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container3 {
+      margin-bottom: 4rem;
+      
+  }
+
+  .contact {
+      margin-top: 4rem;
+      width: 100%;
+      max-width: 100%;
+    
+  }
+
+  h1 {
+      font-size: 3rem;
+  }
+
+  .contact-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  input,
+  textarea,
+  label {
+      font-size: 1rem;
+      padding: 1rem;
+  }
+
+  .contact button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  #aboutMeParagraph , .cards {
+      font-size: 1rem;
+  }
+
+  .container3 {
+      margin-bottom: 4rem;
+  }
+}
+

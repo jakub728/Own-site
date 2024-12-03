@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPage!</title>
+    <script src="https://kit.fontawesome.com/ee335514c2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="content">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#container">Start Page</a></li>
+            <li><a href="#container2">About Me</a></li>
+            <li><a href="#container3">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container" id="container">
+        <section class="slide slide1">
+          <h1>
+            Hi, <br />
+            I am <span class="highlight">Issam</span>, <br />
+            a Web Developer.
+          </h1>
+          <a href="#contact" class="contact-btn">Contact Me</a>
+        </section>
+        <div>
+          <ul class="socials">
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <section id="container2" class="container2">
+        <div class="about-me">
+          <h2 class="title">about me</h2>
+          <p id="aboutMeParagraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed doloremque excepturi assumenda quae, maxime labore culpa dolorem temporibus ratione earum nobis ad praesentium autem error provident sapiente! Nisi, quas! Nisi ipsam nam at animi dolore necessitatibus molestiae saepe unde! Sit vel, unde alias molestiae voluptatum quod repudiandae, minus quibusdam soluta, dolorum consequuntur totam voluptates recusandae saepe labore tempora dicta. Quae, dicta sint. Suscipit excepturi iste eius aliquam, veritatis magnam facere quisquam error aperiam eum, aut vel nostrum mollitia iure adipisci eligendi inventore dignissimos rerum incidunt ducimus enim deserunt eveniet. Quidem impedit temporibus ut deserunt nemo itaque possimus delectus earum quod numquam sint aut, tenetur explicabo debitis dolorem tempora repudiandae rem quasi quaerat modi. Minima nesciunt voluptas quo alias nobis. Accusantium, illo consequuntur! Est neque laborum, deleniti saepe fugit nemo, inventore sequi consectetur nulla ea iste vel maiores non accusamus assumenda odit consequatur! Assumenda expedita, atque ipsum soluta delectus totam.
+          </p>
+        </div>
+      </section>
+
+      <section id="container3">
+        <div class="cards">
+          <div class="card">
+            <h3>Professional Experience</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis libero sit amet ante euismod, sed vehicula nisi ullamcorper. Aliquam erat volutpat. Proin vel ex lectus. Nullam consectetur, purus sit amet ullamcorper gravida, metus sapien placerat turpis, nec aliquam enim sapien ut quam.
+            </p>
+            <h4>Web Developer at XYZ Corp</h4>
+            <p>
+              Developed and maintained multiple client websites using HTML, CSS, JavaScript, and PHP. Worked with clients to improve the user experience and increase engagement. Led team projects with agile methodology.
+            </p>
+            <h4>Front-End Developer at ABC Ltd</h4>
+            <p>
+              Collaborated with design teams to bring wireframes to life. Focused on responsive design and performance optimization. Integrated third-party APIs and services.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Education</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui quis interdum luctus. Quisque lobortis interdum lacus. Cras gravida augue ac nisi convallis tincidunt.
+            </p>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>University of XYZ, 2015 - 2019</p>
+            <h4>Master's in Web Development</h4>
+            <p>University of ABC, 2019 - 2021</p>
+          </div>
+          <div class="card">
+            <h3>Languages</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum metus eget augue ullamcorper, vel lobortis velit vehicula.
+            </p>
+            <ul>
+              <li>English: Fluent</li>
+              <li>Spanish: Intermediate</li>
+              <li>French: Basic</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact" >
+        <section>
+          <h2>Contact Form:</h2>
+          <form action="">
+            <div class="form-group" id="contact">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="Your email address">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Your message" rows="5"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Issam 2024</p>
+        <a href="#" class="go-home">Go to Home Page</a>
+      </div>
+    </footer>
+  </body>
+</html>
