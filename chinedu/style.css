@@ -125,16 +125,24 @@ body {
       height: 120px;
     }
   }
-  .back-button {
-    display: flex; /* Flex container */
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: brown; /* Orange background */
+  
+  button {
+    width: 100px;
+    height: 30px;
+    background-color: var(--color-four);
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-  }
+    font-family: var(--font-primary);
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button::after {
+    content: " \1F44B";
+
+}
+
+
