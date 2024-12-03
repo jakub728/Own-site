@@ -29,13 +29,13 @@
     object-fit: cover;
     left: 3400px;
     height: 2129px;
-    animation: cloud2 40s linear infinite;
+    animation: cloud2 60s linear infinite;
 }
 
 body {
     background: url(images/clouds-sky-sky-clouds-blue-blue-sky-clouds-nature-1368630-pxhere.com.jpg) no-repeat;
     background-size: cover;
-    animation: cloud 40s linear infinite;
+    animation: cloud 60s linear infinite;
     overflow-x: hidden;
 }   
 
@@ -287,6 +287,7 @@ a:visited {
     padding: 3rem;
     font-size: 1.5rem;
     z-index: 2;
+    opacity: 0.85;
 
 
     text-shadow: 10px 10px 10px black,
@@ -506,34 +507,42 @@ a:visited {
 .small1:hover {
     background: var(--color-foreground2);
     filter: brightness(1.5);
+    opacity: 1;
 }
 .small2:hover {
     background: var(--color-foreground);
     filter: brightness(1.5);
+    
 }
 .small3:hover {
     background: var(--color-foreground2);
     filter: brightness(1.5);
+    opacity: 1;
 }
 .small4:hover {
     background: var(--color-foreground);
     filter: brightness(1.5);
+    opacity: 1;
 }
 .small4:hover {
     background: var(--color-foreground);
     filter: brightness(1.5);
+    opacity: 1;
 }
 .small5 img:hover {
     background: var(--color-foreground);
     opacity: 100%;
+    opacity: 1;
 }
 .small6:hover {
     background: var(--color-foreground2);
     filter: brightness(1.5);
+    opacity: 1;
 }
 .small7:hover {
     background: var(--color-foreground);
     filter: brightness(1.5);
+    opacity: 1;
 }
 
 
@@ -554,7 +563,6 @@ a:visited {
     align-items: center;
     position: static;
     z-index: 2;
-    margin-bottom: 50px;
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px, rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     h1 {
         text-shadow: 0 0 1px white;
@@ -577,7 +585,7 @@ a:visited {
 
  /* ! FOOTER */
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     height: 50px;
     background-color: var(--color-foreground2);
@@ -612,7 +620,6 @@ footer {
 
     }
 
-
 }
 
 
@@ -622,6 +629,10 @@ footer {
 
 
 @media (max-width: 1440px) {
+    header {
+        display: none;
+    }
+
     .big {
         background: var(--color-foreground2);
         grid-area: big;
