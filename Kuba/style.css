@@ -15,9 +15,9 @@
     --color-foreground: #252531;
     --color-foreground2: #2C2B38;
 
-    --color-one: #ff0037;
-    --color-two: #F2453D;
-    --color-three: #F2453D;
+    --color-one: #c945a5;
+    --color-two: #c945a5;
+    --color-three: #c945a5;
     --color-four: #F2453D;
 
     --font-primary: "Poppins";
@@ -36,6 +36,7 @@ body {
     background: url(images/clouds-sky-sky-clouds-blue-blue-sky-clouds-nature-1368630-pxhere.com.jpg) no-repeat;
     background-size: cover;
     animation: cloud 40s linear infinite;
+    overflow-x: hidden;
 }   
 
 
@@ -78,7 +79,10 @@ header {
         animation: scroll 7s infinite linear 1s;
         text-align: end;
         text-wrap: nowrap;
-
+        text-shadow: 0px 3px 0px #b2a98f,
+             0px 6px 10px rgba(0,0,0,0.15),
+             0px 9px 2px rgba(0,0,0,0.1),
+             0px 12px 30px rgba(0,0,0,0.1);
     }
 
     .fa-car-side {
@@ -266,7 +270,8 @@ a:visited {
     1px 1px 1px #fe2c55;
 }
 
-i:hover {
+.small2 i:hover,
+.big i:hover {
     transform: scale(1.5);
 }
 
@@ -552,7 +557,7 @@ i:hover {
     margin-bottom: 50px;
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px, rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     h1 {
-        text-shadow: 0 0 5px white;
+        text-shadow: 0 0 1px white;
         margin-bottom: 1rem;
     }
 
@@ -587,6 +592,27 @@ footer {
     p {
         font-weight: 800;
     }
+
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: var(--color-four);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: var(--font-primary);
+    }
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    button::after {
+        content: " \1F44B";
+
+    }
+
+
 }
 
 
@@ -667,22 +693,14 @@ footer {
         position: static;
         z-index: 2;
         margin-bottom: 50px;
-        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px, rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px, 
+                    rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
         h1 {
-            text-shadow: 0 0 5px white;
+            text-shadow: 2px 2px 10px black;
             text-align: center;
             margin-bottom: 1rem;
         }
-    
-    
     }
-
-
-
-
-
-
-
 
 
     main {
@@ -702,4 +720,11 @@ footer {
         "big2";
         gap: 2rem;
     }
+
+    [class^="small"] {
+        padding: 1rem;
+    }
+
+
+
 }
